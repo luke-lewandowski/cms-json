@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { main } from './main';
+import './main.scss';
 
 Promise.all([axios.get(`/schema.json`), axios.get(`/data.json`)]).then(values => {
 	const schema = values[0].data;
